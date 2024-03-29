@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+    <link href="./css/card.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/card.js"></script>
+    <script src="./js/script.js"></script>
+
+    <style>
+        /* Adicione estilos CSS personalizados aqui */
+    </style>
+</head>
+<body>
+    <header class="container-fluid bg-dark text-center p-3">
+        <h1 class="text-white">Carrinho de Compras</h1>
+    </header>
+
+    <div class="container bg-white rounded-top mt-5" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12 pt-3" id="carrinho">
+                <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-center font-weight-bold">
+                        <div>Produto</div>
+                        <div>Preço</div>
+                        <div>Quantidade</div>
+                        <div>Total</div>
+                    </div>
+                    <!-- Repetir este bloco para cada produto no carrinho -->
+                    <!-- Limitado a 4 produtos -->
+                    <!-- Se o carrinho estiver vazio, não mostrar esta parte -->
+                    <!-- Se o carrinho estiver completo, mostrar esta parte -->
+                    <!-- Adicione a classe 'd-none' para esconder por padrão -->
+                    <div class="d-flex justify-content-between align-items-center mt-3 d-none">
+                        <div class="d-flex align-items-center">
+                            <img src="caminho_da_imagem" alt="Produto" width="100">
+                            <div class="ml-3">Nome do Produto</div>
+                        </div>
+                        <div>R$ Preço do Produto</div>
+                        <div>Quantidade do Produto</div>
+                        <div>Total do Produto</div>
+                    </div>
+                    <!-- Fim do bloco de repetição -->
+
+                    <!-- Adiciona uma linha para indicar carrinho vazio -->
+                    <div class="text-center mt-3">
+                        <p>O seu carrinho está vazio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container bg-light rounded-bottom py-4" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="btn btn-sm bg-light border border-dark">Voltar</button>
+                    </div>
+                    <div class="px-md-0 px-1" id="footer-font">
+                        <b class="pl-md-4">SUBTOTAL R$ <span class="pl-md-4" id="valorTotalCompra"></span></b>
+                    </div>
+                    <div>
+                        <button class="btn btn-sm bg-dark text-white px-lg-5 px-3">CONTINUAR</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="container-fluid bg-warning text-center p-3 mt-5">
+        <p>Carlos Alexandre - © 2024</p>
+    </footer>
+
+    <script>
+        // Adicione o script JavaScript aqui, se necessário
+    </script>
+</body>
+</html>
